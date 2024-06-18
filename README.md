@@ -47,6 +47,8 @@ you can use Docker Compose with the following command from the source repository
 
 `docker compose up`
 
+`chmod +x docker-entrypoint.sh`
+
 Check out the [CTFd docs](https://docs.ctfd.io/) for [deployment options](https://docs.ctfd.io/docs/deployment/installation) and the [Getting Started](https://docs.ctfd.io/tutorials/getting-started/) guide
 
 ## Credits
