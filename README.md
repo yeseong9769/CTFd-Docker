@@ -44,6 +44,7 @@ CTFd is a Capture The Flag framework focusing on ease of use and customizability
 you can use Docker Compose with the following command from the source repository:
 
 `docker compose build --no-cache`
+
 `docker compose up`
 
 Check out the [CTFd docs](https://docs.ctfd.io/) for [deployment options](https://docs.ctfd.io/docs/deployment/installation) and the [Getting Started](https://docs.ctfd.io/tutorials/getting-started/) guide
