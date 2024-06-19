@@ -13,7 +13,13 @@ CTFd is a Capture The Flag framework focusing on ease of use and customizability
 
 ## Install
 
-you can use Docker Compose with the following command from the source repository:
+You can build image and use images with the following command:
+
+`docker build -t ctfd .`
+
+`docker run -d -p 80:8000 ctfd/ctfd`
+
+or you can use Docker Compose with the following command from the source repository:
 
 `docker compose build --no-cache`
 
