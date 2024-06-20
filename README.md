@@ -17,7 +17,7 @@ You can build image and use images with the following command:
 
 `docker build -t ctfd .`
 
-`docker run -d -p 80:8000 ctfd`
+`docker run -d -p 80:8000 -v /var/run/docker.sock:/var/run/docker.sock --group-add [docker_group_id] ctfd`
 
 or you can use Docker Compose with the following command from the source repository:
 

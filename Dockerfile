@@ -28,9 +28,6 @@ RUN pip install --no-cache-dir -r requirements.txt \
 FROM python:3.9-slim-buster as release
 WORKDIR /opt/CTFd
 
-# mount docker socket (docker outside docker)
-VOLUME /var/run/docker.sock:/var/run/docker.sock
-
 # hadolint ignore=DL3008
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
