@@ -1,16 +1,14 @@
 # ![](https://github.com/CTFd/CTFd/blob/master/CTFd/themes/core/static/img/logo.png?raw=true)
 
-## CTFd
+## ![CTFd 3.5.0](https://github.com/CTFd/CTFd/tree/3.5.0)
 
 CTFd is a Capture The Flag framework focusing on ease of use and customizability. It comes with everything you need to run a CTF and it's easy to customize with plugins and themes.
 
 ![CTFd is a CTF in a can.](https://github.com/CTFd/CTFd/blob/master/CTFd/themes/core/static/img/scoreboard.png?raw=true)
 
-## andyjsmith/CTFd-Docker-Plugin
+## ![andyjsmith/CTFd-Docker-Plugin](https://github.com/andyjsmith/CTFd-Docker-Plugin)
 
 We used this plugin to provide individual ctf environment.
-
-![andyjsmith/CTFd-Docker-Plugin](https://github.com/andyjsmith/CTFd-Docker-Plugin)
 
 ## Install
 
