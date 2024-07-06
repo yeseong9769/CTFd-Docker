@@ -6,6 +6,7 @@ This repository contains a modified version of CTFd 3.5.0 integrated with the Do
 ## Features
 - CTFd 3.5.0 core functionality
 - Docker plugin for efficient challenge deployment and management
+- Nginx with SSL configuration for secure connections
 
 ## Usage
 We use the Docker outside Docker (DooD) approach in this setup. This method allows the CTFd container to interact with the host's Docker daemon, providing better resource management.
@@ -23,6 +24,9 @@ Or you can use Docker Compose with the following command from the source reposit
 `docker compose up`
 
 Note: The `-v /var/run/docker.sock:/var/run/docker.sock` option in the docker run command enables the DooD functionality by giving the container access to the host's Docker socket.
+
+## SSL Configuration
+This project includes Nginx configuration with SSL for secure connections. Users should replace the provided SSL certificates with their own valid certificates before deploying in a production environment.
 
 ## What's Your ETH CTF
 This platform was used to host the WhatyourETH CTF, a project developed as part of the 12th K-Shield Junior Vulnerability Analysis Course. WhatyourETH CTF focuses on Ethereum and smart contract vulnerabilities, providing participants with hands-on experience in identifying and exploiting weaknesses in blockchain technologies.
