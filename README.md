@@ -1,16 +1,14 @@
 # ![](https://github.com/CTFd/CTFd/blob/master/CTFd/themes/core/static/img/logo.png?raw=true)
 
-## ![CTFd 3.5.0](https://github.com/CTFd/CTFd/tree/3.5.0)
+# CTFd 3.5.0 with Docker Plugin for What's Your ETH CTF
+This repository contains a modified version of CTFd 3.5.0 integrated with the Docker plugin, used to host the WhatyourETH CTF competition.
 
-CTFd is a Capture The Flag framework focusing on ease of use and customizability. It comes with everything you need to run a CTF and it's easy to customize with plugins and themes.
+## Features
+- CTFd 3.5.0 core functionality
+- Docker plugin for efficient challenge deployment and management
 
-![CTFd is a CTF in a can.](https://github.com/CTFd/CTFd/blob/master/CTFd/themes/core/static/img/scoreboard.png?raw=true)
-
-## ![andyjsmith/CTFd-Docker-Plugin](https://github.com/andyjsmith/CTFd-Docker-Plugin)
-
-We used this plugin to provide individual ctf environment.
-
-## Install
+## Usage
+We use the Docker outside Docker (DooD) approach in this setup. This method allows the CTFd container to interact with the host's Docker daemon, providing better resource management.
 
 You can build image and use images with the following command:
 
@@ -18,10 +16,17 @@ You can build image and use images with the following command:
 
 `docker run -d -p 80:8000 -v /var/run/docker.sock:/var/run/docker.sock --group-add [docker_group_id] ctfd`
 
-or you can use Docker Compose with the following command from the source repository:
+Or you can use Docker Compose with the following command from the source repository:
 
 `docker compose build --no-cache`
 
 `docker compose up`
 
-Check out the [CTFd docs](https://docs.ctfd.io/) for [deployment options](https://docs.ctfd.io/docs/deployment/installation) and the [Getting Started](https://docs.ctfd.io/tutorials/getting-started/) guide
+Note: The `-v /var/run/docker.sock:/var/run/docker.sock` option in the docker run command enables the DooD functionality by giving the container access to the host's Docker socket.
+
+## What's Your ETH CTF
+This platform was used to host the WhatyourETH CTF, a project developed as part of the 12th K-Shield Junior Vulnerability Analysis Course. WhatyourETH CTF focuses on Ethereum and smart contract vulnerabilities, providing participants with hands-on experience in identifying and exploiting weaknesses in blockchain technologies.
+
+## Acknowledgements
+- Original CTFd project: [CTFd/CTFd](https://github.com/CTFd/CTFd)
+- Docker plugin: [andyjsmith/CTFd-Docker-Plugin](https://github.com/andyjsmith/CTFd-Docker-Plugin)
